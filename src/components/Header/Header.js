@@ -1,11 +1,12 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     return (
         <div className="header-bg">
-            <navbar >
+            <Navbar >
             <NavLink className="header-nav"
             to="/home"
         activeStyle={{
@@ -43,12 +44,12 @@ const Header = () => {
         >
      Login
     </NavLink>  
-       </navbar>   
-            <div class="hero-image">
-          <div class="hero-text">
-            <h1 style={{fontSize:"4rem"}}>Our Language Learning Team </h1>
-            <p class="card-text fs-4">Language learning is an active process that begins at birth and continues throughout life.   </p>
-            <button class="button draw-border p-3 header-button">SIGN UP</button>
+       </Navbar>   
+            <div className="hero-image">
+          <div className="hero-text">
+            <h1 style={{fontSize:"4rem text-white"}}>Our Language Learning Team </h1>
+            <p className="card-text fs-4 text-white">Language learning is an active process that begins at birth and continues throughout life.   </p>
+            <button className="button draw-border p-3 header-button">SIGN UP</button>
           </div>
         </div>
               

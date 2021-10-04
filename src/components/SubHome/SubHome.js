@@ -11,7 +11,7 @@ const SubHome = () => {
     },[])
     return (
         <Container>
-            <h1 className="text-center mt-5">Our Syllabus</h1>
+            <h1 className="text-center mt-5 text-danger">Our Language Courses</h1>
             <Row xs={1} md={4} className="g-4 mt-3 pb-5">
                 {
                     cards.map(card => <Cards key={card.id} card={card}></Cards>)

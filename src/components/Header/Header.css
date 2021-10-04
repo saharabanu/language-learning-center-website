@@ -46,6 +46,10 @@
 .header-nav{
     text-decoration: none;
     margin-right: 10px;
-    
-   
+    font-weight: 700;
+    padding: 20px; 
+    color:aliceblue ;
+}
+.header-bg{
+  background-color:black;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 const Service = (props) => {
-    const{img,name,price,description}=props.service;
+    const{img,name,price,description,}=props.service;
     return (
         
             <Col>
@@ -14,7 +14,9 @@ const Service = (props) => {
                     {description}
           </Card.Text>
           <p>Course Price : ${price}</p>
+         
         </Card.Body>
+        
       </Card>
     </Col>
            

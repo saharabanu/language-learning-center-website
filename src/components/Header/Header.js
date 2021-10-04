@@ -4,8 +4,8 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div>
-            <navbar>
+        <div className="header-bg">
+            <navbar >
             <NavLink className="header-nav"
             to="/home"
         activeStyle={{
@@ -35,19 +35,14 @@ const Header = () => {
     </NavLink>
     
             <NavLink className="header-nav"
-            to="/servicedetails"
+            to="/login"
         activeStyle={{
          fontWeight: "bold",
            color: "red"
             }}
         >
-     ServiceDetails
-    </NavLink>
-   
-      
-
-            
-           
+     Login
+    </NavLink>  
        </navbar>   
             <div class="hero-image">
           <div class="hero-text">

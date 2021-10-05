@@ -12,9 +12,9 @@ const Home = () => {
             <div className="d-flex">
                 
                 <div>
-                    <h3>Basic theory Knowledge
-                    </h3>
-                    <p>First we teach about the theory about the topic of music.and we justify their capacity.Then we approach forward according their capability.
+                    <h4>Basic theory Knowledge
+                    </h4>
+                    <p>First we teach about the theory about the topic of learning language.And we justify their capacity.Then we approach forward according their capability.
 
                     </p>
                 </div>
@@ -33,8 +33,8 @@ const Home = () => {
                     </p>
                 </div>
                 <div>
-                    <h3>Professional training
-                    </h3>
+                    <h4>Professional training
+                    </h4>
                     <p>In this stage,all the learners gain much experience about theory and practical knowledge.So now this is the time to go deep on spoken your langguage
 
                     </p>

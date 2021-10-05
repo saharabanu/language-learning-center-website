@@ -1,32 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Row } from 'react-bootstrap';
+import Teacher from '../Teacher/Teacher';
 
 const Teachers = () => {
-    const teacherStyle={
-        display:'grid',
-        gridTemplateColumns:'repeat(3,1fr)',
-        gridGap:'20px',
-    }
-    const imgStyle={
-        height:'80%',
-        width:'80%'
-    }
+    const [teachers,setTeachers]=useState([]);
+    useEffect(()=>{
+        fetch('./teachers.json')
+        .then(res=>res.json())
+        .then(data=>setTeachers(data))
+    },[])
+
+    
     return (
         <div>
             <h2>Our techers</h2>
-            <div style={teacherStyle} >
-                <div >
-                    <img style={imgStyle} src="https://image.freepik.com/free-photo/positive-teacher-posing-with-open-notebok_114579-77686.jpg" alt="" />
-                    <h3>Rubya Serte</h3>
-                </div>
-                <div >
-                    <img style={imgStyle} src="https://as1.ftcdn.net/v2/jpg/02/82/19/44/500_F_282194469_qFCkPmeSZZDHxG3Qo2oDD47n6ANc77Dn.jpg" alt="" />
-                    <h3>Milon Kumar</h3>
-                </div>
-                <div>
-                    <img style={imgStyle} src="https://t3.ftcdn.net/jpg/03/56/38/30/240_F_356383054_uuRegY4bnDgzrYRXsah2wu3VcENfadFK.jpg" alt="" />
-                    <h3>Ronjoy Iqbal</h3>
-                </div>
-            </div>
+            <Row xs={1} md={3} className="g-4">
+            {
+                teachers.map(teacher=><Teacher teacher={teacher}></Teacher>)
+            }
+            </Row>
+            
         </div>
     );
 };
